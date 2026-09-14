@@ -23,4 +23,4 @@ export const todpSlice = createSlice({
 
 export const {addTodo, removeTodo} = todpSlice.actions
 
-export default todpSlice.reducer
+export default todpSlice.reducer;
