@@ -29,7 +29,7 @@ function AddTodo() {
         Add Todo
       </button>
     </form>
-  )
+  );
 };
 
 export default AddTodo

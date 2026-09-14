@@ -39,7 +39,7 @@ function Todos() {
         ))}
       </ul>
     </>
-  )
+  );
 };
 
 export default Todos

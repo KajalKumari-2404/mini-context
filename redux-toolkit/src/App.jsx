@@ -11,7 +11,7 @@ function App() {
     <AddTodo />
     <Todos />
     </>
-  )
+  );
 };
 
 export default App
