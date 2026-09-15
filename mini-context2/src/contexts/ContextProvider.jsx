@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ThemeProvider } from "./theme";
+import { ThemeProvider } from "./theme"; //Ye theme.js se ThemeProvider aa raha hai.
 
 export default function ContextProvider({ children }) {
 

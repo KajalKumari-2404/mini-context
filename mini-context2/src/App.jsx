@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { ThemeProvider } from './contexts/theme'
-import ThemeBtn from './components/ThemeBtn'
+import { ThemeProvider } from './contexts/theme' //Ye theme.js se ThemeProvider la raha hai.Iska kaam hai theme ki information child components ko provide karna.
+import ThemeBtn from './components/ThemeBtn' //Ye toggle button component hai.
 import Card from './components/Card'
 
 function App() {
-  const [themeMode, setThemeMode] = useState("light")
+  const [themeMode, setThemeMode] = useState("light") //Yahan hum theme ko state me store kar rahe hain.
+  //themeMode current theme store karta hai aur setThemeMode theme change karta hai.
 
+  //Ye function light theme lagata hai.
   const lightTheme = () => {
     setThemeMode("light")
   }
@@ -18,13 +20,13 @@ function App() {
   // actual change in theme
 
   useEffect(() => {
-    document.querySelector('html').classList.remove("light", "dark")
-    document.querySelector('html').classList.add(themeMode)
-  }, [themeMode])
+    document.querySelector('html').classList.remove("light", "dark") //Ye browser ke <html> element ko select karta hai.
+    document.querySelector('html').classList.add(themeMode) //HTML par agar light ya dark class already lagi hai, to hata do.
+  }, [themeMode]) //ye dependency array h. Jab bhi themeMode change hoga, useEffect dobara chalega.
   
 
   return (
-    <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
+    <ThemeProvider value={{themeMode, lightTheme, darkTheme}}> //Yahan hum Context ke through 3 cheezein provide kar rahe hain:
       <div className="flex flex-wrap min-h-screen items-center">
           <div className="w-full">
               <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
@@ -37,6 +39,7 @@ function App() {
           </div>
       </div>
     </ThemeProvider>
+    // Jo components Provider ke andar hote hain, wo Context ka data access kar sakte hain.
   )
 }
 
