@@ -30,3 +30,4 @@ export default function ContextProvider({ children }) {
         </ThemeProvider>
     );
 }
+// Theme context provider
