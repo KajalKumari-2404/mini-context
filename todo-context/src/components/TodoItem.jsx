@@ -15,7 +15,6 @@ function TodoItem({ todo }) { //Ye props destructuring hai.
         toggleComplete(todo.id)
     }
 
-
     
 
     return (

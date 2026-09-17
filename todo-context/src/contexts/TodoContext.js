@@ -18,7 +18,7 @@ export const TodoContext = createContext({//TodoContext ek Context hai jisme Tod
 
 export const useTodo = () => {
     return useContext(TodoContext)
-}
+};
 
 
 export const TodoProvider = TodoContext.Provider
