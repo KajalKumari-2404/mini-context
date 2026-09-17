@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { useTodo } from '../contexts/TodoContext';
+import { useTodo } from '../contexts/TodoContext';//sse hum TodoContext ke functions access kar sakte hain.
 
-function TodoItem({ todo }) {
+function TodoItem({ todo }) { //Ye props destructuring hai.
     const [isTodoEditable, setIsTodoEditable] = useState(false)
     const [todoMsg, setTodoMsg] = useState(todo.todo)
     const {updateTodo, deleteTodo, toggleComplete} = useTodo()
