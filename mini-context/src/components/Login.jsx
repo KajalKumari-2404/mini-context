@@ -21,7 +21,6 @@ function Login() {
         setUser({username, password}) //Hum username aur password ko ek object me bhej rahe hain.
     }
 
-
     // Component screen par kya show karega, wo yahan likhte hain.
   return (
     <div>
