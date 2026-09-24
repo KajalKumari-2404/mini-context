@@ -12,7 +12,7 @@ function App() {
     <Todos />
     </>
   )
-}
+};
 
 export default App
 

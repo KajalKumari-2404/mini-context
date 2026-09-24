@@ -30,6 +30,6 @@ function AddTodo() {
       </button>
     </form>
   )
-}
+};
 
 export default AddTodo
