@@ -11,7 +11,7 @@ export default function Card() {
                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                         Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
                     </h5>
-                </a>
+                 </a>
                 <div className="flex items-center mt-2.5 mb-5">
                     <svg
                         className="w-4 h-4 text-yellow-300 mr-1"

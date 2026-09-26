@@ -17,7 +17,7 @@ function App() {
     setThemeMode("dark")
   }
 
-  // actual change in theme
+  // actual change in theme 
 
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark") //Ye browser ke <html> element ko select karta hai.
