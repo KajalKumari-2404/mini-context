@@ -16,6 +16,7 @@ function App() {
   const darkTheme = () => {
     setThemeMode("dark")
   }
+  
 
   // actual change in theme 
 
